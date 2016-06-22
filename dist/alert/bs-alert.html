@@ -1,0 +1,15 @@
+<template>
+
+    <require from="bootstrap/css/bootstrap.css"></require>
+
+    <div class="alert alert-${type} alert-dismissible" role="alert">
+
+        <template if.bind="dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-label.bind="closeLabel" title.bind="closeLabel">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </template>
+
+        <content>${message}</content>
+    </div>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <require from="bootstrap/css/bootstrap.css"></require>
+
+    <div>
+        <ul class="nav nav-tabs">
+            <li repeat.for="item of _items" role="presentation" class="${item.active ? 'active' : ''} ${item.disabled ? 'disabled' : ''}">
+                <a href="#" click.delegate="activateTab(item)">
+                    <bs-glyph if.bind="item.glyph" icon.bind="item.glyph"></bs-glyph>
+                    ${item.title}
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <content></content>
+        </div>
+    </div>
+</template>

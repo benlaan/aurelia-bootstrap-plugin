@@ -1,0 +1,23 @@
+<template>
+    <require from="./bs-drop-down-item"></require>
+
+    <div class="btn-group dropdown ${opened ? 'open' : ''}">
+        <bs-button if.bind="split" style.bind="style">${label}</bs-button>
+        <button class="btn btn-${style} dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <template if.bind="!split">${label}</template>
+            <span class="caret" click.delegate="toggle()"></span>
+        </button>
+
+        <ul class="dropdown-menu">
+            <bs-drop-down-item repeat.for="item of items"
+                label.bind="item.label"
+                link.bind="item.link"
+                separator.bind="item.separator"
+                disabled.bind="item.disabled"
+            >
+            </bs-drop-down-item>
+
+            <content></content>
+        </ul>
+    </div>
+</template>

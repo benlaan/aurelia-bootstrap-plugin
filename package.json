@@ -7,9 +7,9 @@
     "plugin",
     "bootstrap"
   ],
-  "homepage": "http://www.benlaan.com/projects/aurelia-bootstrap",
+  "homepage": "http://www.benlaan.com/projects/aurelia-bootstrap-plugin",
   "bugs": {
-    "url": "https://github.com/benlaan/aurelia-bootstrap/issues"
+    "url": "https://github.com/benlaan/aurelia-bootstrap-plugin/issues"
   },
   "license": "MIT",
   "author": "Ben Laan <benlaan@gmail.com> (http://benlaan.com/)",

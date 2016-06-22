@@ -1,6 +1,6 @@
 {
   "name": "aurelia-bootstrap-plugin",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1",
   "description": "A Bootstrap component plugin for Aurelia",
   "keywords": [
     "aurelia",

@@ -1,4 +1,8 @@
-<template>
+<template bindable="title">
     <require from="bootstrap/css/bootstrap.css"></require>
 
+    <div class="jumbotron">
+        <h1>${title}</h1>
+        <content></content>
+    </div>
 </template>

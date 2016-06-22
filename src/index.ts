@@ -13,7 +13,7 @@ export function configure(config: any) {
     './drop-down/bs-drop-down-item',
     './glyph/bs-glyph.html',
     './input-group/bs-input-group.html',
-    './jumbotron/bs-jumbotron',
+    './jumbotron/bs-jumbotron.html',
     './label/bs-label',
     './listgroup/bs-listgroup',
     './media-object/bs-media-object',

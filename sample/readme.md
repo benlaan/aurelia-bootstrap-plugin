@@ -45,6 +45,14 @@ export class Components {
 <template>
 
   <hr />
+  <h2>Jumbotron</h2>
+
+  <bs-jumbotron title="Awesome">
+    <p>Something awesome this way comes. Trust me. Press here.. Go on. I dare you</p>
+    <p><bs-button>Learn More</bs-button></p>
+  </bs-jumbotron>
+
+  <hr />
   <h2>Tabs</h2>
 
   <bs-tab>

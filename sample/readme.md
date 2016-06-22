@@ -44,7 +44,6 @@ export class Components {
 ```html
 <template>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Tabs</h2>
 
@@ -62,7 +61,6 @@ export class Components {
       </bs-tab-item>
   </bs-tab>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Pills</h2>
 
@@ -81,7 +79,6 @@ export class Components {
     <bs-pill-item id="pub" title="Pub" active="true">Yes!</bs-pill-item>
   </bs-pill>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Input Groups</h2>
 
@@ -93,7 +90,6 @@ export class Components {
 
   <bs-input-group before="$" after=".00" placeholder="enter amount"></bs-input-group>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Breadcrumbs</h2>
 
@@ -108,7 +104,6 @@ export class Components {
 
   <bs-breadcrumb items.bind="breadcrumbs"></bs-breadcrumb>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Badges</h2>
 
@@ -117,7 +112,6 @@ export class Components {
     Outbox: <bs-badge label="3"></bs-badge>
   </bs-button>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Toolbar with Groups</h2>
 
@@ -135,7 +129,6 @@ export class Components {
     </bs-button-group>
   </bs-toolbar>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Drop Down</h2>
 
@@ -163,7 +156,6 @@ export class Components {
 
   <bs-drop-down label="Press Me Too!" items.bind="dropDownOptions"></bs-drop-down>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Button with Nested Glyph</h2>
 
@@ -171,13 +163,11 @@ export class Components {
       <bs-glyph icon="star" label="Rate"></bs-glyph>
   </bs-button>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Glyph Button</h2>
 
   <bs-button size="Large" glyph="refresh">Refreshing..</bs-button>
 
-  <!----------------------------------------------------------------------------------->
   <hr />
   <h2>Alerts</h2>
 
@@ -187,8 +177,6 @@ export class Components {
 
   <bs-alert type="info">In case you are interested</bs-alert>
   <bs-alert type="warning">Stop!! This is a bad idea</bs-alert>
-
-  <!----------------------------------------------------------------------------------->
 
 </template>
 ```

@@ -1,4 +1,21 @@
 <template>
     <require from="bootstrap/css/bootstrap.css"></require>
 
+    <nav>
+        <ul class="pagination">
+            <li>
+                <a href.bind="firstPageLink" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li repeat.for="item of items" class="${(item == '...') ? 'disabled' : ''}">
+                <a href.bind="$parent.getLinkFormat(item)">${item}</a>
+            </li>
+            <li>
+                <a href.bind="lastPageLink" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </template>

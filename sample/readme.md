@@ -23,6 +23,7 @@ export class Components {
     constructor() {
 
         this.breadcrumbs = [
+
             { name: "Top", link: "/go" },
             { name: "Middle", link: "/go-home" },
             { name: "Bottom" },
@@ -43,6 +44,32 @@ export class Components {
 
 ```html
 <template>
+
+
+  <hr />
+  <h2>Pagination</h2>
+
+  <bs-pagination
+    page-count="10"
+    max-display-count="10"
+    last-page-link="#/page/last"
+    link-format="#/page/{{number}}">
+  </bs-pagination>
+
+  <bs-pagination
+    page-count="20"
+    max-display-count="10"
+    first-page-link="#/page/first"
+    link-format="#/page/{{index}}">
+  </bs-pagination>
+
+  <hr />
+  <h2>Jumbotron</h2>
+
+  <bs-jumbotron title="Awesome">
+    <p>Something awesome this way comes. Trust me. Press here.. Go on. I dare you</p>
+    <p><bs-button>Learn More</bs-button></p>
+  </bs-jumbotron>
 
   <hr />
   <h2>Jumbotron</h2>

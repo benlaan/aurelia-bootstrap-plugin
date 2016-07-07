@@ -1,4 +1,7 @@
-<template>
+<template bindable="size">
     <require from="bootstrap/css/bootstrap.css"></require>
 
+    <div class="well well-${size || 'lg'}">
+        <content></content>
+    </div>
 </template>

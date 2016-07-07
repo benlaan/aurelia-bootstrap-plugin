@@ -1,4 +1,22 @@
-<template>
+<template bindable="link, imageSource, imageAltText, xsWidth, smWidth, mdWidth, lgWidth">
+
     <require from="bootstrap/css/bootstrap.css"></require>
 
+    <div class="col-xs-${xsWidth || 12} col-sm-${smWidth || 6} col-md-${mdWidth || 4} col-lg-${lgWidth || 2}">
+
+        <!--
+            The following doesn't work.. the content tag is not legal within a conditional
+            see https://github.com/aurelia/framework/issues/375
+        -->
+        <div class="thumbnail">
+            <a if.bind="link" href.bind="link" class="thumbnail">
+                <img src.bind="imageSource" alt.bind="imageAltText"></img>
+            </a>
+            <img if.bind="!link" src.bind="imageSource" alt.bind="imageAltText"></img>
+
+            <div class="caption">
+                <content></content>
+            </div>
+        </div>
+    </div>
 </template>

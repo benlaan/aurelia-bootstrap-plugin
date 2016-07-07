@@ -1,4 +1,13 @@
 <template>
     <require from="bootstrap/css/bootstrap.css"></require>
 
+    <div class="progress">
+        <div
+            class="progress-bar ${style ? 'progress-bar-' + style : ''} ${striped ? 'progress-bar-striped' : ''} ${active ? 'active' : ''}"
+            role="progressbar"
+            aria-valuenow.bind="progress" aria-valuemin.bind="min" aria-valuemax.bind="max"
+            style="width: ${width}%; min-width: 2em">
+            <span>${width} %</span>
+        </div>
+    </div>
 </template>

@@ -1,4 +1,24 @@
-<template>
+<template bindable="style, showTitle, headerText, footerText">
     <require from="bootstrap/css/bootstrap.css"></require>
+    <div class="panel panel-${style || 'default'}">
 
+        <div if.bind="headerText" class="panel-heading">
+            <template if.bind="showTitle">
+                 <h3 class="panel-title">${headerText}</h3>
+            </template>
+            <template if.bind="showTitle">${headerText}</template>
+        </div>
+
+        <div class="panel-body">
+            <content></content>
+        </div>
+
+        <div if.bind="footerText" class="panel-footer">
+            <template if.bind="showTitle">
+                 <h3 class="panel-title">${footerText}</h3>
+            </template>
+            <template if.bind="showTitle">${footerText}</template>
+        </div>
+
+    </div>
 </template>

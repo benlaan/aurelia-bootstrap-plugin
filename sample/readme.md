@@ -6,7 +6,6 @@ Not all components are currently represented yet, but I intend to add more over 
 
 ## View Model
 
-
 ```typescript
 import { Router, RouterConfiguration} from 'aurelia-router'
 import { bindable } from 'aurelia-framework'

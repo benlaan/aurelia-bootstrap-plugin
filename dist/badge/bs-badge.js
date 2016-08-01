@@ -1,11 +1,11 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
-    var Badge = (function () {
-        function Badge() {
+    var BsBadge = (function () {
+        function BsBadge() {
         }
-        return Badge;
+        return BsBadge;
     }());
-    exports.Badge = Badge;
+    exports.BsBadge = BsBadge;
 });
 
 //# sourceMappingURL=bs-badge.js.map

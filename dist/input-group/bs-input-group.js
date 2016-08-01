@@ -1,11 +1,11 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
-    var InputGroup = (function () {
-        function InputGroup() {
+    var BsInputGroup = (function () {
+        function BsInputGroup() {
         }
-        return InputGroup;
+        return BsInputGroup;
     }());
-    exports.InputGroup = InputGroup;
+    exports.BsInputGroup = BsInputGroup;
 });
 
 //# sourceMappingURL=bs-input-group.js.map

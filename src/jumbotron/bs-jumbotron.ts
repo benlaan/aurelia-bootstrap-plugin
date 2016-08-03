@@ -1,4 +1,7 @@
 import {bindable} from 'aurelia-framework';
 
-export class Jumbotron {
+export class BsJumbotron {
+
+    @bindable
+    public title: string;
 }

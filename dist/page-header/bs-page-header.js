@@ -1,11 +1,11 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
-    var PageHeader = (function () {
-        function PageHeader() {
+    var BsPageHeader = (function () {
+        function BsPageHeader() {
         }
-        return PageHeader;
+        return BsPageHeader;
     }());
-    exports.PageHeader = PageHeader;
+    exports.BsPageHeader = BsPageHeader;
 });
 
 //# sourceMappingURL=bs-page-header.js.map

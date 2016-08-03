@@ -1,11 +1,11 @@
 define(["require", "exports"], function (require, exports) {
     "use strict";
-    var Navbar = (function () {
-        function Navbar() {
+    var BsNavBar = (function () {
+        function BsNavBar() {
         }
-        return Navbar;
+        return BsNavBar;
     }());
-    exports.Navbar = Navbar;
+    exports.BsNavBar = BsNavBar;
 });
 
 //# sourceMappingURL=bs-nav-bar.js.map

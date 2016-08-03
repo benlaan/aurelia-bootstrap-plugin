@@ -12,6 +12,10 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
     var BsListGroupItem = (function () {
         function BsListGroupItem() {
         }
+        __decorate([
+            aurelia_framework_1.bindable, 
+            __metadata('design:type', Array)
+        ], BsListGroupItem.prototype, "items", void 0);
         BsListGroupItem = __decorate([
             aurelia_framework_1.containerless, 
             __metadata('design:paramtypes', [])

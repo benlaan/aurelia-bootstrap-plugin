@@ -1,1 +1,1 @@
-{"version":3,"sources":["panel/bs-panel.ts"],"names":[],"mappings":";;IAEA;QAAA;QACA,CAAC;QAAD,YAAC;IAAD,CADA,AACC,IAAA;IADY,aAAK,QACjB,CAAA","file":"panel/bs-panel.js","sourceRoot":"/src"}
+{"version":3,"sources":["panel/bs-panel.ts"],"names":[],"mappings":";;;;;;;;;;;IAEA;QAAA;QAaA,CAAC;QAXG;YAAC,4BAAQ;;8CAAA;QAGT;YAAC,4BAAQ;;kDAAA;QAGT;YAAC,4BAAQ;;mDAAA;QAGT;YAAC,4BAAQ;;mDAAA;QAEb,cAAC;IAAD,CAbA,AAaC,IAAA;IAbY,eAAO,UAanB,CAAA","file":"panel/bs-panel.js","sourceRoot":"/src"}

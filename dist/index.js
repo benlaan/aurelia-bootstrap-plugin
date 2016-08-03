@@ -1,7 +1,35 @@
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", './alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well'], function (require, exports, BsAlert, BsBadge, BsBreadcrumb, BsBreadcrumbItem, BsButton, BsButtonGroup, BsDropDown, BsDropDownItem, BsGlyph, BsInputGroup, BsJumbotron, BsLabel, BsListGroup, BsListGroupItem, BsMediaObject, BsNavBar, BsPageHeader, BsPagination, BsPanel, BsPill, BsPillItem, BsProgressBar, BsResponsiveEmbed, BsTab, BsTabItem, BsThumbnail, BsToolbar, BsWell) {
     "use strict";
+    exports.BsAlert = BsAlert;
+    exports.BsBadge = BsBadge;
+    exports.BsBreadcrumb = BsBreadcrumb;
+    exports.BsBreadcrumbItem = BsBreadcrumbItem;
+    exports.BsButton = BsButton;
+    exports.BsButtonGroup = BsButtonGroup;
+    exports.BsDropDown = BsDropDown;
+    exports.BsDropDownItem = BsDropDownItem;
+    exports.BsGlyph = BsGlyph;
+    exports.BsInputGroup = BsInputGroup;
+    exports.BsJumbotron = BsJumbotron;
+    exports.BsLabel = BsLabel;
+    exports.BsListGroup = BsListGroup;
+    exports.BsListGroupItem = BsListGroupItem;
+    exports.BsMediaObject = BsMediaObject;
+    exports.BsNavBar = BsNavBar;
+    exports.BsPageHeader = BsPageHeader;
+    exports.BsPagination = BsPagination;
+    exports.BsPanel = BsPanel;
+    exports.BsPill = BsPill;
+    exports.BsPillItem = BsPillItem;
+    exports.BsProgressBar = BsProgressBar;
+    exports.BsResponsiveEmbed = BsResponsiveEmbed;
+    exports.BsTab = BsTab;
+    exports.BsTabItem = BsTabItem;
+    exports.BsThumbnail = BsThumbnail;
+    exports.BsToolbar = BsToolbar;
+    exports.BsWell = BsWell;
     function configure(config) {
-        config.globalResources('./alert/bs-alert', './badge/bs-badge.html', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group.html', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph.html', './input-group/bs-input-group.html', './jumbotron/bs-jumbotron.html', './label/bs-label.html', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object.html', './nav-bar/bs-nav-bar', './page-header/bs-page-header.html', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed.html', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail.html', './toolbar/bs-toolbar', './well/bs-well.html');
+        config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
     }
     exports.configure = configure;
 });

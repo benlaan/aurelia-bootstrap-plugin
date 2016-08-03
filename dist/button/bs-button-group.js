@@ -12,6 +12,10 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
     var BsButtonGroup = (function () {
         function BsButtonGroup() {
         }
+        __decorate([
+            aurelia_framework_1.bindable, 
+            __metadata('design:type', String)
+        ], BsButtonGroup.prototype, "label", void 0);
         BsButtonGroup = __decorate([
             aurelia_framework_1.containerless, 
             __metadata('design:paramtypes', [])

@@ -1,4 +1,7 @@
 import {bindable} from 'aurelia-framework';
 
-export class Well {
+export class BsWell {
+
+    @bindable
+    public size: string;
 }

@@ -2,13 +2,13 @@
     <require from="./bs-drop-down-item"></require>
 
     <div class="btn-group dropdown ${opened ? 'open' : ''}">
-        <bs-button if.bind="split" style.bind="style">${label}</bs-button>
-        <button class="btn btn-${style} dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <bs-button if.bind="split" style.bind="style" click.delegate="toggle()">${label}</bs-button>
+        <button class="btn btn-${style} dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" click.delegate="toggle()">
             <template if.bind="!split">${label}</template>
             <span class="caret" click.delegate="toggle()"></span>
         </button>
 
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" style="display: ${opened ? 'block' : 'none'}">
             <bs-drop-down-item repeat.for="item of items"
                 label.bind="item.label"
                 link.bind="item.link"
@@ -16,8 +16,7 @@
                 disabled.bind="item.disabled"
             >
             </bs-drop-down-item>
-
-            <content></content>
+            <slot></slot>
         </ul>
     </div>
 </template>

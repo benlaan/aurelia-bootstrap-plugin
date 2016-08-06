@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "aurelia-framework": "^1.0.1",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
   },
   "devDependencies": {
     "aurelia-bundler": "^0.4.0",

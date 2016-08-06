@@ -1,11 +1,14 @@
-import {bindable, containerless} from 'aurelia-framework';
+import {inject, bindable, containerless} from 'aurelia-framework';
+import {DOM} from 'aurelia-pal'
 
+@inject(DOM)
 @containerless
 export class BsDropDown {
 
-    constructor() {
+    constructor(private dom: Document) {
 
         this.style = "default";
+        document.onclick = () => this.opened = false;
     }
 
     @bindable
@@ -25,7 +28,7 @@ export class BsDropDown {
 
     public toggle() : void {
 
-        this.opened = !this.opened;
+        this.opened  = !this.opened;
     }
 }
 

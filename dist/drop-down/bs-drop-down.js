@@ -7,11 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", 'aurelia-framework'], function (require, exports, aurelia_framework_1) {
+define(["require", "exports", 'aurelia-framework', 'aurelia-pal'], function (require, exports, aurelia_framework_1, aurelia_pal_1) {
     "use strict";
     var BsDropDown = (function () {
-        function BsDropDown() {
+        function BsDropDown(dom) {
+            var _this = this;
+            this.dom = dom;
             this.style = "default";
+            document.onclick = function () { return _this.opened = false; };
         }
         BsDropDown.prototype.toggle = function () {
             this.opened = !this.opened;
@@ -37,8 +40,9 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
             __metadata('design:type', Array)
         ], BsDropDown.prototype, "items", void 0);
         BsDropDown = __decorate([
+            aurelia_framework_1.inject(aurelia_pal_1.DOM),
             aurelia_framework_1.containerless, 
-            __metadata('design:paramtypes', [])
+            __metadata('design:paramtypes', [Document])
         ], BsDropDown);
         return BsDropDown;
     }());

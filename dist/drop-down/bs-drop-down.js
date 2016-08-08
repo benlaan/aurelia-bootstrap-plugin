@@ -14,7 +14,7 @@ define(["require", "exports", 'aurelia-framework', 'aurelia-pal'], function (req
             var _this = this;
             this.dom = dom;
             this.style = "default";
-            document.onclick = function () { return _this.opened = false; };
+            document.addEventListener("click", function () { _this.opened = false; });
         }
         BsDropDown.prototype.toggle = function () {
             this.opened = !this.opened;

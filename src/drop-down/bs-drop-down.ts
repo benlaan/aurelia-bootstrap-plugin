@@ -8,7 +8,7 @@ export class BsDropDown {
     constructor(private dom: Document) {
 
         this.style = "default";
-        document.onclick = () => this.opened = false;
+        document.addEventListener("click", () => { this.opened = false; });
     }
 
     @bindable

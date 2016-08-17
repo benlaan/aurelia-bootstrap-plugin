@@ -8,6 +8,9 @@ var assign = Object.assign || require('object.assign');
 var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
 var typescript = require('gulp-typescript');
+var filenames = require('gulp-filenames');
+var jeditor = require('gulp-json-editor');
+var slash = require('slash');
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -44,6 +47,25 @@ gulp.task('build-css', function() {
     .pipe(browserSync.stream());
 });
 
+// prepares a list of resources
+gulp.task('generate-resources', function() {
+  return gulp.src(paths.html)
+    .pipe(filenames('resources'));
+});
+
+// writes list of resources to package.json
+gulp.task('build-resources', [ 'generate-resources' ], function() {
+  return gulp.src('./package.json')
+    .pipe(jeditor(function(json) {
+      json.aurelia = json.aurelia || {};
+      json.aurelia.build = json.aurelia.build || {};
+      json.aurelia.build.resources = filenames.get('resources').map(slash);
+
+      return json;
+    }))
+    .pipe(gulp.dest('./'));
+});
+
 // this task calls the clean task (located
 // in ./clean.js), then runs the build-system
 // and build-html tasks in parallel
@@ -51,7 +73,7 @@ gulp.task('build-css', function() {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-system', 'build-html', 'build-css'],
+    ['build-system', 'build-html', 'build-css', 'build-resources'],
     callback
   );
 });

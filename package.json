@@ -37,6 +37,8 @@
     "gulp": "^3.9.1",
     "gulp-bump": "^2.1.0",
     "gulp-changed": "^1.3.0",
+    "gulp-filenames": "^2.2.0",
+    "gulp-json-editor": "^2.2.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-protractor": "2.4.0",
@@ -53,11 +55,46 @@
     "object.assign": "^4.0.3",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.1",
+    "slash": "^1.0.0",
     "systemjs": "0.19.30",
     "tslint": "^3.11.0",
     "typescript": ">=1.9.0-dev || ^2.0.0",
     "typings": "^1.0.4",
     "vinyl-paths": "^2.1.0",
     "yargs": "^4.7.1"
+  },
+  "aurelia": {
+    "build": {
+      "resources": [
+        "alert/bs-alert.html",
+        "badge/bs-badge.html",
+        "breadcrumb/bs-breadcrumb-item.html",
+        "breadcrumb/bs-breadcrumb.html",
+        "drop-down/bs-drop-down-item.html",
+        "drop-down/bs-drop-down.html",
+        "button/bs-button-group.html",
+        "button/bs-button.html",
+        "glyph/bs-glyph.html",
+        "input-group/bs-input-group.html",
+        "jumbotron/bs-jumbotron.html",
+        "label/bs-label.html",
+        "list-group/bs-list-group-item.html",
+        "list-group/bs-list-group.html",
+        "media-object/bs-media-object.html",
+        "nav-bar/bs-nav-bar.html",
+        "page-header/bs-page-header.html",
+        "pagination/bs-pagination.html",
+        "panel/bs-panel.html",
+        "pill/bs-pill-item.html",
+        "pill/bs-pill.html",
+        "progress-bar/bs-progress-bar.html",
+        "responsive-embed/bs-responsive-embed.html",
+        "tab/bs-tab-item.html",
+        "tab/bs-tab.html",
+        "thumbnail/bs-thumbnail.html",
+        "toolbar/bs-toolbar.html",
+        "well/bs-well.html"
+      ]
+    }
   }
 }

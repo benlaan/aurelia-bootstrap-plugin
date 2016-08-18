@@ -1,0 +1,8 @@
+<template>
+    <require from="bootstrap/css/bootstrap.css"></require>
+
+    <button type="button" class="btn btn-${style} ${getSize()} ${class}">
+        <bs-glyph if.bind="glyph != ''" icon.bind="glyph"></bs-glyph>
+        <slot></slot>
+    </button>
+</template>

@@ -2,7 +2,7 @@
   "name": "aurelia-bootstrap-plugin",
   "version": "0.0.1",
   "description": "A Bootstrap component plugin for Aurelia",
-  "main": "dist/index.js",
+  "main": "dist/commonjs/index.js",
   "keywords": [
     "aurelia",
     "plugin",

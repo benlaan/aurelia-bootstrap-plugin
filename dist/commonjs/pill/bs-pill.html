@@ -1,0 +1,21 @@
+<template>
+    <require from="bootstrap/css/bootstrap.css"></require>
+
+    <div class="row">
+        <div class="${stacked ? 'col-md-' + stackSize : ''}">
+            <ul class="nav nav-pills ${stacked ? 'nav-stacked' : ''}" role="tablist">
+                <li repeat.for="item of _items" role="presentation" class="${item.active ? 'active' : ''} ${item.disabled ? 'disabled' : ''}">
+                    <a href="#" click.delegate="activatePill(item)">
+                        <bs-glyph if.bind="item.glyph" icon.bind="item.glyph"></bs-glyph>
+                        ${item.title}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="${stacked ? 'col-md-' + (12 - stackSize) : ''}">
+            <div class="tab-content">
+                <slot></slot>
+            </div>
+        </div>
+    </div>
+</template>

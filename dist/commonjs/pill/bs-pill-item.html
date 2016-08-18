@@ -1,0 +1,9 @@
+<template>
+    <require from="bootstrap/css/bootstrap.css"></require>
+
+    <div role="tabpanel" class="tab-pane ${active ? 'active' : ''}" id.bind="id">
+        <div class="panel-body">
+            <slot></slot>
+        </div>
+    </div>
+</template>

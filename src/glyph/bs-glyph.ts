@@ -7,4 +7,7 @@ export class BsGlyph {
 
     @bindable
     public icon: string;
+
+    @bindable
+    public class: string;
 }

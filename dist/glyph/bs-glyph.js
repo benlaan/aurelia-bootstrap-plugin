@@ -20,6 +20,10 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
             aurelia_framework_1.bindable, 
             __metadata('design:type', String)
         ], BsGlyph.prototype, "icon", void 0);
+        __decorate([
+            aurelia_framework_1.bindable, 
+            __metadata('design:type', String)
+        ], BsGlyph.prototype, "class", void 0);
         return BsGlyph;
     }());
     exports.BsGlyph = BsGlyph;

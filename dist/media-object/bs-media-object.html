@@ -1,9 +1,8 @@
 <template>
-    <require from="bootstrap/css/bootstrap.css"></require>
     <div class="media">
         <div if.bind="!direction || direction == 'left'" class="media-left media-${alignment || 'middle'}">
-            <a href="#">
-                <img class="media-object" src.bind="imageSource" alt="imageAltText">
+            <a href.bind="link">
+                <img class="media-object img-responsive" src.bind="imageSource" alt="imageAltText" style="${style}" />
             </a>
         </div>
         <div class="media-body">
@@ -11,8 +10,8 @@
             <slot></slot>
         </div>
         <div if.bind="direction == 'right'" class="media-right media-${alignment || 'middle'}">
-            <a href="#">
-                <img class="media-object" src.bind="imageSource" alt="imageAltText">
+            <a href.bind="link">
+                <img class="media-object img-responsive" src.bind="imageSource" alt="imageAltText" style="${style}" />
             </a>
         </div>
     </div>

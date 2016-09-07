@@ -1,4 +1,4 @@
-import {bindable, containerless} from 'aurelia-framework';
+import { autoinject, bindable, containerless } from 'aurelia-framework';
 
 export enum ButtonSize {
 
@@ -8,9 +8,10 @@ export enum ButtonSize {
 }
 
 @containerless
+@autoinject
 export class BsButton {
 
-    constructor() {
+    constructor(private element: Element) {
 
         this.style = "default";
     }
@@ -27,7 +28,10 @@ export class BsButton {
     @bindable
     public glyph: string;
 
-    public getSize(): string {
+    @bindable
+    public link: string;
+
+    public get sizeClass(): string {
 
         switch (ButtonSize[this.size]) {
 
@@ -43,5 +47,10 @@ export class BsButton {
             default:
                 return "";
         }
+    }
+
+    public click(): void {
+
+        this.element.dispatchEvent(new CustomEvent("click", { bubbles: true }));
     }
 }

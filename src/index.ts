@@ -7,6 +7,7 @@ import * as BsButtonGroup from './button/bs-button-group';
 import * as BsDropDown from './drop-down/bs-drop-down';
 import * as BsDropDownItem from './drop-down/bs-drop-down-item';
 import * as BsGlyph from './glyph/bs-glyph';
+import * as BsTextArea from './input-controls/bs-textarea';
 import * as BsInputGroup from './input-group/bs-input-group';
 import * as BsJumbotron from './jumbotron/bs-jumbotron';
 import * as BsLabel from './label/bs-label';
@@ -39,6 +40,7 @@ export function configure(config: any) {
     './drop-down/bs-drop-down',
     './drop-down/bs-drop-down-item',
     './glyph/bs-glyph',
+    './input-controls/bs-textarea',
     './input-group/bs-input-group',
     './jumbotron/bs-jumbotron',
     './label/bs-label',
@@ -89,7 +91,7 @@ export {
   BsTab,
   BsTabItem,
   BsThumbnail,
+  BsTextArea,
   BsToolbar,
   BsWell
-
 };

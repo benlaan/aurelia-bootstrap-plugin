@@ -1,6 +1,6 @@
 {
   "name": "aurelia-bootstrap-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Bootstrap component plugin for Aurelia",
   "main": "dist/index.js",
   "keywords": [
@@ -67,16 +67,19 @@
     "build": {
       "resources": [
         "alert/bs-alert.html",
-        "badge/bs-badge.html",
         "breadcrumb/bs-breadcrumb-item.html",
         "breadcrumb/bs-breadcrumb.html",
+        "badge/bs-badge.html",
         "button/bs-button-group.html",
         "button/bs-button.html",
         "drop-down/bs-drop-down-item.html",
         "drop-down/bs-drop-down.html",
         "glyph/bs-glyph.html",
-        "input-controls/bs-textarea.html",
+        "grid/bs-column.html",
+        "grid/bs-row.html",
         "input-group/bs-input-group.html",
+        "input-controls/bs-form-group.html",
+        "input-controls/bs-textarea.html",
         "jumbotron/bs-jumbotron.html",
         "label/bs-label.html",
         "list-group/bs-list-group-item.html",

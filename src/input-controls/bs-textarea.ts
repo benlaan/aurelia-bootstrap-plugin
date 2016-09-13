@@ -3,7 +3,7 @@ import { bindable, autoinject, computedFrom } from 'aurelia-framework';
 @autoinject()
 export class BsTextArea {
 
-    constructor(private bsElement: Element) {
+    constructor() {
 
         this.placeholder = "";
         window.addEventListener('resize', this.windowResized, true);
@@ -27,7 +27,7 @@ export class BsTextArea {
     @bindable
     public placeholder: string;
 
-    /// Refer from http://stackoverflow.com/questions/1760629/how-to-get-number-of-rows-in-textarea
+    /// Refer http://stackoverflow.com/questions/1760629/how-to-get-number-of-rows-in-textarea
     private calculateContentHeight(lineHeight: number) {
 
         var origHeight = this.element.style.height;
@@ -70,17 +70,19 @@ export class BsTextArea {
 
     private windowResized = (event: Event) => {
 
-        var oldValue = this.value;
-        this.value = "";
+        if (this.value) {
 
-        setTimeout(() => {
+            this.value += " ";
 
-            this.value = oldValue;
-        })
+            setTimeout(() => {
+
+                this.value = this.value.trim();
+            });
+        }
     }
 
     @computedFrom("value", "element")
-    public get requiredRows(): number {
+        public get requiredRows(): number {
 
         if (this.rows)
             return this.rows;
@@ -89,12 +91,10 @@ export class BsTextArea {
         var scrollHeight = this.calculateContentHeight(lineHeight);
         var rows = Math.ceil(scrollHeight / lineHeight);
 
-        // clamp
-        return Math.min(this.maxRows || 10000, Math.max(this.minRows || 1, rows));
-    }
+        var min = this.minRows || 1;
+        var max = this.maxRows || 10000;
 
-    public keyup(): void {
-
-        this.element.dispatchEvent(new CustomEvent("keyup", { bubbles: true }));
+        // clamp: minRows >> rows >> maxRows
+        return Math.min(max, Math.max(min, rows));
     }
 }

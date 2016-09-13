@@ -10,15 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 define(["require", "exports", 'aurelia-framework'], function (require, exports, aurelia_framework_1) {
     "use strict";
     var BsTextArea = (function () {
-        function BsTextArea(bsElement) {
+        function BsTextArea() {
             var _this = this;
-            this.bsElement = bsElement;
             this.windowResized = function (event) {
-                var oldValue = _this.value;
-                _this.value = "";
-                setTimeout(function () {
-                    _this.value = oldValue;
-                });
+                if (_this.value) {
+                    _this.value += " ";
+                    setTimeout(function () {
+                        _this.value = _this.value.trim();
+                    });
+                }
             };
             this.placeholder = "";
             window.addEventListener('resize', this.windowResized, true);
@@ -50,14 +50,13 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
                 var lineHeight = parseInt(window.getComputedStyle(this.element).lineHeight, 10);
                 var scrollHeight = this.calculateContentHeight(lineHeight);
                 var rows = Math.ceil(scrollHeight / lineHeight);
-                return Math.min(this.maxRows || 10000, Math.max(this.minRows || 1, rows));
+                var min = this.minRows || 1;
+                var max = this.maxRows || 10000;
+                return Math.min(max, Math.max(min, rows));
             },
             enumerable: true,
             configurable: true
         });
-        BsTextArea.prototype.keyup = function () {
-            this.element.dispatchEvent(new CustomEvent("keyup", { bubbles: true }));
-        };
         __decorate([
             aurelia_framework_1.bindable, 
             __metadata('design:type', HTMLElement)
@@ -88,7 +87,7 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
         ], BsTextArea.prototype, "requiredRows", null);
         BsTextArea = __decorate([
             aurelia_framework_1.autoinject(), 
-            __metadata('design:paramtypes', [Element])
+            __metadata('design:paramtypes', [])
         ], BsTextArea);
         return BsTextArea;
     }());

@@ -9,32 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 define(["require", "exports", 'aurelia-framework'], function (require, exports, aurelia_framework_1) {
     "use strict";
-    var BsInputGroup = (function () {
-        function BsInputGroup() {
+    var BsColumn = (function () {
+        function BsColumn() {
         }
         __decorate([
             aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "type", void 0);
+            __metadata('design:type', Number)
+        ], BsColumn.prototype, "xs", void 0);
         __decorate([
             aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "before", void 0);
+            __metadata('design:type', Number)
+        ], BsColumn.prototype, "sm", void 0);
         __decorate([
             aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "after", void 0);
+            __metadata('design:type', Number)
+        ], BsColumn.prototype, "md", void 0);
         __decorate([
             aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "placeholder", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "value", void 0);
-        return BsInputGroup;
+            __metadata('design:type', Number)
+        ], BsColumn.prototype, "lg", void 0);
+        return BsColumn;
     }());
-    exports.BsInputGroup = BsInputGroup;
+    exports.BsColumn = BsColumn;
 });
 
-//# sourceMappingURL=bs-input-group.js.map
+//# sourceMappingURL=bs-column.js.map

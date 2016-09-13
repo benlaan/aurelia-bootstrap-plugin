@@ -9,32 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 define(["require", "exports", 'aurelia-framework'], function (require, exports, aurelia_framework_1) {
     "use strict";
-    var BsInputGroup = (function () {
-        function BsInputGroup() {
+    var BsFormGroup = (function () {
+        function BsFormGroup() {
         }
         __decorate([
             aurelia_framework_1.bindable, 
             __metadata('design:type', String)
-        ], BsInputGroup.prototype, "type", void 0);
+        ], BsFormGroup.prototype, "label", void 0);
         __decorate([
             aurelia_framework_1.bindable, 
             __metadata('design:type', String)
-        ], BsInputGroup.prototype, "before", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "after", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "placeholder", void 0);
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], BsInputGroup.prototype, "value", void 0);
-        return BsInputGroup;
+        ], BsFormGroup.prototype, "for", void 0);
+        return BsFormGroup;
     }());
-    exports.BsInputGroup = BsInputGroup;
+    exports.BsFormGroup = BsFormGroup;
 });
 
-//# sourceMappingURL=bs-input-group.js.map
+//# sourceMappingURL=bs-form-group.js.map

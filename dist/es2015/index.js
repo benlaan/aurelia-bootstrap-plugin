@@ -6,7 +6,9 @@ import * as BsButton from './button/bs-button';
 import * as BsButtonGroup from './button/bs-button-group';
 import * as BsDropDown from './drop-down/bs-drop-down';
 import * as BsDropDownItem from './drop-down/bs-drop-down-item';
+import * as BsFormGroup from './input-controls/bs-form-group';
 import * as BsGlyph from './glyph/bs-glyph';
+import * as BsTextArea from './input-controls/bs-textarea';
 import * as BsInputGroup from './input-group/bs-input-group';
 import * as BsJumbotron from './jumbotron/bs-jumbotron';
 import * as BsLabel from './label/bs-label';
@@ -21,14 +23,16 @@ import * as BsPill from './pill/bs-pill';
 import * as BsPillItem from './pill/bs-pill-item';
 import * as BsProgressBar from './progress-bar/bs-progress-bar';
 import * as BsResponsiveEmbed from './responsive-embed/bs-responsive-embed';
+import * as BsRow from './grid/bs-row';
+import * as BsColumn from './grid/bs-column';
 import * as BsTab from './tab/bs-tab';
 import * as BsTabItem from './tab/bs-tab-item';
 import * as BsThumbnail from './thumbnail/bs-thumbnail';
 import * as BsToolbar from './toolbar/bs-toolbar';
 import * as BsWell from './well/bs-well';
 export function configure(config) {
-    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
+    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './grid/bs-column', './grid/bs-row', './input-controls/bs-textarea', './input-controls/bs-form-group', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
 }
-export { BsAlert, BsBadge, BsBreadcrumb, BsBreadcrumbItem, BsButton, BsButtonGroup, BsDropDown, BsDropDownItem, BsGlyph, BsInputGroup, BsJumbotron, BsLabel, BsListGroup, BsListGroupItem, BsMediaObject, BsNavBar, BsPageHeader, BsPagination, BsPanel, BsPill, BsPillItem, BsProgressBar, BsResponsiveEmbed, BsTab, BsTabItem, BsThumbnail, BsToolbar, BsWell };
+export { BsAlert, BsBadge, BsBreadcrumb, BsBreadcrumbItem, BsButton, BsButtonGroup, BsDropDown, BsDropDownItem, BsGlyph, BsFormGroup, BsRow, BsColumn, BsInputGroup, BsJumbotron, BsLabel, BsListGroup, BsListGroupItem, BsMediaObject, BsNavBar, BsPageHeader, BsPagination, BsPanel, BsPill, BsPillItem, BsProgressBar, BsResponsiveEmbed, BsTab, BsTabItem, BsThumbnail, BsTextArea, BsToolbar, BsWell };
 
 //# sourceMappingURL=index.js.map

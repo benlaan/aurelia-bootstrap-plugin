@@ -14,6 +14,14 @@ __decorate([
     bindable, 
     __metadata('design:type', String)
 ], BsButtonGroup.prototype, "label", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsButtonGroup.prototype, "class", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsButtonGroup.prototype, "align", void 0);
 BsButtonGroup = __decorate([
     containerless, 
     __metadata('design:paramtypes', [])

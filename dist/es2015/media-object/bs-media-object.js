@@ -7,8 +7,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { bindable } from 'aurelia-framework';
+import { bindable, computedFrom } from 'aurelia-framework';
 export class BsMediaObject {
+    constructor() {
+        this.imageWidth = 160;
+        this.imageHeight = 90;
+    }
+    get style() {
+        return `
+            min-height: ${this.imageHeight}px;
+            max-height: ${this.imageHeight}px;
+            min-width: ${this.imageWidth}px;
+            max-width: ${this.imageWidth}px;
+        `;
+    }
 }
 __decorate([
     bindable, 
@@ -20,11 +32,27 @@ __decorate([
 ], BsMediaObject.prototype, "imageSource", void 0);
 __decorate([
     bindable, 
+    __metadata('design:type', Number)
+], BsMediaObject.prototype, "imageWidth", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', Number)
+], BsMediaObject.prototype, "imageHeight", void 0);
+__decorate([
+    bindable, 
     __metadata('design:type', String)
 ], BsMediaObject.prototype, "imageAltText", void 0);
 __decorate([
     bindable, 
     __metadata('design:type', String)
 ], BsMediaObject.prototype, "heading", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsMediaObject.prototype, "link", void 0);
+__decorate([
+    computedFrom("imageWidth", "imageHeight"), 
+    __metadata('design:type', String)
+], BsMediaObject.prototype, "style", null);
 
 //# sourceMappingURL=bs-media-object.js.map

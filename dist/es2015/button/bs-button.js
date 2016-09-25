@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { bindable, containerless } from 'aurelia-framework';
+import { autoinject, bindable, containerless } from 'aurelia-framework';
 export var ButtonSize;
 (function (ButtonSize) {
     ButtonSize[ButtonSize["ExtraSmall"] = 0] = "ExtraSmall";
@@ -15,10 +15,11 @@ export var ButtonSize;
     ButtonSize[ButtonSize["Large"] = 2] = "Large";
 })(ButtonSize || (ButtonSize = {}));
 export let BsButton = class BsButton {
-    constructor() {
+    constructor(element) {
+        this.element = element;
         this.style = "default";
     }
-    getSize() {
+    get sizeClass() {
         switch (ButtonSize[this.size]) {
             case ButtonSize.ExtraSmall:
                 return "btn-xs";
@@ -29,6 +30,9 @@ export let BsButton = class BsButton {
             default:
                 return "";
         }
+    }
+    click() {
+        this.element.dispatchEvent(new CustomEvent("click", { bubbles: true }));
     }
 };
 __decorate([
@@ -47,9 +51,14 @@ __decorate([
     bindable, 
     __metadata('design:type', String)
 ], BsButton.prototype, "glyph", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsButton.prototype, "link", void 0);
 BsButton = __decorate([
-    containerless, 
-    __metadata('design:paramtypes', [])
+    containerless,
+    autoinject, 
+    __metadata('design:paramtypes', [Element])
 ], BsButton);
 
 //# sourceMappingURL=bs-button.js.map

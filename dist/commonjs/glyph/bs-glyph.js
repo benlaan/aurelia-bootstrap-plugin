@@ -15,11 +15,27 @@ var BsGlyph = (function () {
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', String)
+    ], BsGlyph.prototype, "title", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', String)
     ], BsGlyph.prototype, "label", void 0);
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', String)
     ], BsGlyph.prototype, "icon", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', String)
+    ], BsGlyph.prototype, "class", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', String)
+    ], BsGlyph.prototype, "color", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', Number)
+    ], BsGlyph.prototype, "size", void 0);
     return BsGlyph;
 }());
 exports.BsGlyph = BsGlyph;

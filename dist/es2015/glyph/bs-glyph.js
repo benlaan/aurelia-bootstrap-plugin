@@ -13,10 +13,26 @@ export class BsGlyph {
 __decorate([
     bindable, 
     __metadata('design:type', String)
+], BsGlyph.prototype, "title", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
 ], BsGlyph.prototype, "label", void 0);
 __decorate([
     bindable, 
     __metadata('design:type', String)
 ], BsGlyph.prototype, "icon", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsGlyph.prototype, "class", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsGlyph.prototype, "color", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', Number)
+], BsGlyph.prototype, "size", void 0);
 
 //# sourceMappingURL=bs-glyph.js.map

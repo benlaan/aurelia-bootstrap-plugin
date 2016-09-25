@@ -1,5 +1,7 @@
 <template>
-    <require from="bootstrap/css/bootstrap.css"></require>
-
-    <span class="glyphicon glyphicon-${icon}" aria-hidden="true"> ${label}</span>
+    <span
+        class="glyphicon glyphicon-${icon} ${class}"
+        title.bind="title"
+        aria-hidden="true"
+        style="font-size: ${size || 16}px; color: ${color}"> ${label}</span>
 </template>

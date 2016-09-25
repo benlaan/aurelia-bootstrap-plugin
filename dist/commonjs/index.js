@@ -15,8 +15,12 @@ var BsDropDown = require('./drop-down/bs-drop-down');
 exports.BsDropDown = BsDropDown;
 var BsDropDownItem = require('./drop-down/bs-drop-down-item');
 exports.BsDropDownItem = BsDropDownItem;
+var BsFormGroup = require('./input-controls/bs-form-group');
+exports.BsFormGroup = BsFormGroup;
 var BsGlyph = require('./glyph/bs-glyph');
 exports.BsGlyph = BsGlyph;
+var BsTextArea = require('./input-controls/bs-textarea');
+exports.BsTextArea = BsTextArea;
 var BsInputGroup = require('./input-group/bs-input-group');
 exports.BsInputGroup = BsInputGroup;
 var BsJumbotron = require('./jumbotron/bs-jumbotron');
@@ -45,6 +49,10 @@ var BsProgressBar = require('./progress-bar/bs-progress-bar');
 exports.BsProgressBar = BsProgressBar;
 var BsResponsiveEmbed = require('./responsive-embed/bs-responsive-embed');
 exports.BsResponsiveEmbed = BsResponsiveEmbed;
+var BsRow = require('./grid/bs-row');
+exports.BsRow = BsRow;
+var BsColumn = require('./grid/bs-column');
+exports.BsColumn = BsColumn;
 var BsTab = require('./tab/bs-tab');
 exports.BsTab = BsTab;
 var BsTabItem = require('./tab/bs-tab-item');
@@ -56,7 +64,7 @@ exports.BsToolbar = BsToolbar;
 var BsWell = require('./well/bs-well');
 exports.BsWell = BsWell;
 function configure(config) {
-    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
+    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './grid/bs-column', './grid/bs-row', './input-controls/bs-textarea', './input-controls/bs-form-group', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
 }
 exports.configure = configure;
 

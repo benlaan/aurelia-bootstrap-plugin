@@ -7,8 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { bindable } from 'aurelia-framework';
+import { bindable, computedFrom } from 'aurelia-framework';
 export class BsThumbnail {
+    constructor() {
+        this.maxHeight = 90;
+    }
+    get style() {
+        return `
+            min-height: ${this.maxHeight}px;
+            height: ${this.maxHeight}px;
+        `;
+    }
 }
 __decorate([
     bindable, 
@@ -25,6 +34,10 @@ __decorate([
 __decorate([
     bindable, 
     __metadata('design:type', Number)
+], BsThumbnail.prototype, "maxHeight", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', Number)
 ], BsThumbnail.prototype, "xsWidth", void 0);
 __decorate([
     bindable, 
@@ -38,5 +51,9 @@ __decorate([
     bindable, 
     __metadata('design:type', Number)
 ], BsThumbnail.prototype, "lgWidth", void 0);
+__decorate([
+    computedFrom("imageWidth", "imageHeight"), 
+    __metadata('design:type', String)
+], BsThumbnail.prototype, "style", null);
 
 //# sourceMappingURL=bs-thumbnail.js.map

@@ -25,6 +25,14 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                     aurelia_framework_1.bindable, 
                     __metadata('design:type', String)
                 ], BsButtonGroup.prototype, "label", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
+                ], BsButtonGroup.prototype, "class", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
+                ], BsButtonGroup.prototype, "align", void 0);
                 BsButtonGroup = __decorate([
                     aurelia_framework_1.containerless, 
                     __metadata('design:paramtypes', [])

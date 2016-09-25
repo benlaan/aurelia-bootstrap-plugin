@@ -11,7 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var aurelia_framework_1 = require('aurelia-framework');
 var BsMediaObject = (function () {
     function BsMediaObject() {
+        this.imageWidth = 160;
+        this.imageHeight = 90;
     }
+    Object.defineProperty(BsMediaObject.prototype, "style", {
+        get: function () {
+            return "\n            min-height: " + this.imageHeight + "px;\n            max-height: " + this.imageHeight + "px;\n            min-width: " + this.imageWidth + "px;\n            max-width: " + this.imageWidth + "px;\n        ";
+        },
+        enumerable: true,
+        configurable: true
+    });
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', String)
@@ -22,12 +31,28 @@ var BsMediaObject = (function () {
     ], BsMediaObject.prototype, "imageSource", void 0);
     __decorate([
         aurelia_framework_1.bindable, 
+        __metadata('design:type', Number)
+    ], BsMediaObject.prototype, "imageWidth", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', Number)
+    ], BsMediaObject.prototype, "imageHeight", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
         __metadata('design:type', String)
     ], BsMediaObject.prototype, "imageAltText", void 0);
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', String)
     ], BsMediaObject.prototype, "heading", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', String)
+    ], BsMediaObject.prototype, "link", void 0);
+    __decorate([
+        aurelia_framework_1.computedFrom("imageWidth", "imageHeight"), 
+        __metadata('design:type', String)
+    ], BsMediaObject.prototype, "style", null);
     return BsMediaObject;
 }());
 exports.BsMediaObject = BsMediaObject;

@@ -1,6 +1,4 @@
 <template>
-    <require from="bootstrap/css/bootstrap.css"></require>
-
     <li class="${active ? 'active' : ''}">
         <a if.bind="!active" href="${link || '#'}">${name}</a>
         <template if.bind="active">${name}</template>

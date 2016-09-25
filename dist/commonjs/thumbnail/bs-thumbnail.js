@@ -11,7 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var aurelia_framework_1 = require('aurelia-framework');
 var BsThumbnail = (function () {
     function BsThumbnail() {
+        this.maxHeight = 90;
     }
+    Object.defineProperty(BsThumbnail.prototype, "style", {
+        get: function () {
+            return "\n            min-height: " + this.maxHeight + "px;\n            height: " + this.maxHeight + "px;\n        ";
+        },
+        enumerable: true,
+        configurable: true
+    });
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', String)
@@ -24,6 +32,10 @@ var BsThumbnail = (function () {
         aurelia_framework_1.bindable, 
         __metadata('design:type', String)
     ], BsThumbnail.prototype, "imageAltText", void 0);
+    __decorate([
+        aurelia_framework_1.bindable, 
+        __metadata('design:type', Number)
+    ], BsThumbnail.prototype, "maxHeight", void 0);
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', Number)
@@ -40,6 +52,10 @@ var BsThumbnail = (function () {
         aurelia_framework_1.bindable, 
         __metadata('design:type', Number)
     ], BsThumbnail.prototype, "lgWidth", void 0);
+    __decorate([
+        aurelia_framework_1.computedFrom("imageWidth", "imageHeight"), 
+        __metadata('design:type', String)
+    ], BsThumbnail.prototype, "style", null);
     return BsThumbnail;
 }());
 exports.BsThumbnail = BsThumbnail;

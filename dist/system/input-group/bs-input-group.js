@@ -24,6 +24,10 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                 __decorate([
                     aurelia_framework_1.bindable, 
                     __metadata('design:type', String)
+                ], BsInputGroup.prototype, "type", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
                 ], BsInputGroup.prototype, "before", void 0);
                 __decorate([
                     aurelia_framework_1.bindable, 

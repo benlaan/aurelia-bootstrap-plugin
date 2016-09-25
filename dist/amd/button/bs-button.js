@@ -16,20 +16,28 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
     })(exports.ButtonSize || (exports.ButtonSize = {}));
     var ButtonSize = exports.ButtonSize;
     var BsButton = (function () {
-        function BsButton() {
+        function BsButton(element) {
+            this.element = element;
             this.style = "default";
         }
-        BsButton.prototype.getSize = function () {
-            switch (ButtonSize[this.size]) {
-                case ButtonSize.ExtraSmall:
-                    return "btn-xs";
-                case ButtonSize.Small:
-                    return "btn-sm";
-                case ButtonSize.Large:
-                    return "btn-lg";
-                default:
-                    return "";
-            }
+        Object.defineProperty(BsButton.prototype, "sizeClass", {
+            get: function () {
+                switch (ButtonSize[this.size]) {
+                    case ButtonSize.ExtraSmall:
+                        return "btn-xs";
+                    case ButtonSize.Small:
+                        return "btn-sm";
+                    case ButtonSize.Large:
+                        return "btn-lg";
+                    default:
+                        return "";
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+        BsButton.prototype.click = function () {
+            this.element.dispatchEvent(new CustomEvent("click", { bubbles: true }));
         };
         __decorate([
             aurelia_framework_1.bindable, 
@@ -47,9 +55,14 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
             aurelia_framework_1.bindable, 
             __metadata('design:type', String)
         ], BsButton.prototype, "glyph", void 0);
+        __decorate([
+            aurelia_framework_1.bindable, 
+            __metadata('design:type', String)
+        ], BsButton.prototype, "link", void 0);
         BsButton = __decorate([
-            aurelia_framework_1.containerless, 
-            __metadata('design:paramtypes', [])
+            aurelia_framework_1.containerless,
+            aurelia_framework_1.autoinject, 
+            __metadata('design:paramtypes', [Element])
         ], BsButton);
         return BsButton;
     }());

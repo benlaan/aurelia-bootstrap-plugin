@@ -6,7 +6,9 @@ import * as BsButton from './button/bs-button';
 import * as BsButtonGroup from './button/bs-button-group';
 import * as BsDropDown from './drop-down/bs-drop-down';
 import * as BsDropDownItem from './drop-down/bs-drop-down-item';
+import * as BsFormGroup from './input-controls/bs-form-group';
 import * as BsGlyph from './glyph/bs-glyph';
+import * as BsTextArea from './input-controls/bs-textarea';
 import * as BsInputGroup from './input-group/bs-input-group';
 import * as BsJumbotron from './jumbotron/bs-jumbotron';
 import * as BsLabel from './label/bs-label';
@@ -21,6 +23,8 @@ import * as BsPill from './pill/bs-pill';
 import * as BsPillItem from './pill/bs-pill-item';
 import * as BsProgressBar from './progress-bar/bs-progress-bar';
 import * as BsResponsiveEmbed from './responsive-embed/bs-responsive-embed';
+import * as BsRow from './grid/bs-row';
+import * as BsColumn from './grid/bs-column';
 import * as BsTab from './tab/bs-tab';
 import * as BsTabItem from './tab/bs-tab-item';
 import * as BsThumbnail from './thumbnail/bs-thumbnail';
@@ -39,6 +43,10 @@ export function configure(config: any) {
     './drop-down/bs-drop-down',
     './drop-down/bs-drop-down-item',
     './glyph/bs-glyph',
+    './grid/bs-column',
+    './grid/bs-row',
+    './input-controls/bs-textarea',
+    './input-controls/bs-form-group',
     './input-group/bs-input-group',
     './jumbotron/bs-jumbotron',
     './label/bs-label',
@@ -72,6 +80,9 @@ export {
   BsDropDown,
   BsDropDownItem,
   BsGlyph,
+  BsFormGroup,
+  BsRow,
+  BsColumn,
   BsInputGroup,
   BsJumbotron,
   BsLabel,
@@ -89,7 +100,7 @@ export {
   BsTab,
   BsTabItem,
   BsThumbnail,
+  BsTextArea,
   BsToolbar,
   BsWell
-
 };

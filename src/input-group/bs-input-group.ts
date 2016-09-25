@@ -3,6 +3,9 @@ import {bindable} from 'aurelia-framework';
 export class BsInputGroup {
 
     @bindable
+    public type: string;
+
+    @bindable
     public before: string;
 
     @bindable

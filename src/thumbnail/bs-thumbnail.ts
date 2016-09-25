@@ -1,6 +1,11 @@
-import {bindable} from 'aurelia-framework';
+import { bindable, computedFrom } from 'aurelia-framework';
 
 export class BsThumbnail {
+
+    constructor() {
+
+        this.maxHeight = 90;
+    }
 
     @bindable
     public link: string;
@@ -10,6 +15,9 @@ export class BsThumbnail {
 
     @bindable
     public imageAltText: string;
+
+    @bindable
+    public maxHeight: number;
 
     @bindable
     public xsWidth: number;
@@ -22,4 +30,13 @@ export class BsThumbnail {
 
     @bindable
     public lgWidth: number;
+
+    @computedFrom("imageWidth", "imageHeight")
+    public get style(): string {
+
+        return `
+            min-height: ${this.maxHeight}px;
+            height: ${this.maxHeight}px;
+        `;
+    }
 }

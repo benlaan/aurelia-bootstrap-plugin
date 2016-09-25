@@ -2,6 +2,11 @@ import {bindable} from 'aurelia-framework';
 
 export class BsAlert {
 
+    constructor() {
+
+        this.closeLabel = "Close";
+    }
+
     @bindable
     public dismissible: boolean;
 
@@ -13,9 +18,4 @@ export class BsAlert {
 
     @bindable
     public closeLabel: string;
-
-    constructor() {
-
-        this.closeLabel = "Close";
-    }
 }

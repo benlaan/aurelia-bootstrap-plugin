@@ -37,4 +37,5 @@ export interface IDropDownItem {
     link?: string;
     label?: string;
     separator?: boolean;
+    disabled?: boolean;
 }

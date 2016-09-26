@@ -25,14 +25,15 @@ import * as BsProgressBar from './progress-bar/bs-progress-bar';
 import * as BsResponsiveEmbed from './responsive-embed/bs-responsive-embed';
 import * as BsRow from './grid/bs-row';
 import * as BsColumn from './grid/bs-column';
+import * as BsContainer from './grid/bs-container';
 import * as BsTab from './tab/bs-tab';
 import * as BsTabItem from './tab/bs-tab-item';
 import * as BsThumbnail from './thumbnail/bs-thumbnail';
 import * as BsToolbar from './toolbar/bs-toolbar';
 import * as BsWell from './well/bs-well';
 export function configure(config) {
-    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './grid/bs-column', './grid/bs-row', './input-controls/bs-textarea', './input-controls/bs-form-group', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
+    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './grid/bs-column', './grid/bs-row', './grid/bs-container', './input-controls/bs-textarea', './input-controls/bs-form-group', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
 }
-export { BsAlert, BsBadge, BsBreadcrumb, BsBreadcrumbItem, BsButton, BsButtonGroup, BsDropDown, BsDropDownItem, BsGlyph, BsFormGroup, BsRow, BsColumn, BsInputGroup, BsJumbotron, BsLabel, BsListGroup, BsListGroupItem, BsMediaObject, BsNavBar, BsPageHeader, BsPagination, BsPanel, BsPill, BsPillItem, BsProgressBar, BsResponsiveEmbed, BsTab, BsTabItem, BsThumbnail, BsTextArea, BsToolbar, BsWell };
+export { BsAlert, BsBadge, BsBreadcrumb, BsBreadcrumbItem, BsButton, BsButtonGroup, BsDropDown, BsDropDownItem, BsGlyph, BsFormGroup, BsRow, BsColumn, BsContainer, BsInputGroup, BsJumbotron, BsLabel, BsListGroup, BsListGroupItem, BsMediaObject, BsNavBar, BsPageHeader, BsPagination, BsPanel, BsPill, BsPillItem, BsProgressBar, BsResponsiveEmbed, BsTab, BsTabItem, BsThumbnail, BsTextArea, BsToolbar, BsWell };
 
 //# sourceMappingURL=index.js.map

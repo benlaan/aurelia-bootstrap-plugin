@@ -25,6 +25,7 @@ import * as BsProgressBar from './progress-bar/bs-progress-bar';
 import * as BsResponsiveEmbed from './responsive-embed/bs-responsive-embed';
 import * as BsRow from './grid/bs-row';
 import * as BsColumn from './grid/bs-column';
+import * as BsContainer from './grid/bs-container';
 import * as BsTab from './tab/bs-tab';
 import * as BsTabItem from './tab/bs-tab-item';
 import * as BsThumbnail from './thumbnail/bs-thumbnail';
@@ -45,6 +46,7 @@ export function configure(config: any) {
     './glyph/bs-glyph',
     './grid/bs-column',
     './grid/bs-row',
+    './grid/bs-container',
     './input-controls/bs-textarea',
     './input-controls/bs-form-group',
     './input-group/bs-input-group',
@@ -83,6 +85,7 @@ export {
   BsFormGroup,
   BsRow,
   BsColumn,
+  BsContainer,
   BsInputGroup,
   BsJumbotron,
   BsLabel,

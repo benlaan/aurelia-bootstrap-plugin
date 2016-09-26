@@ -53,6 +53,8 @@ var BsRow = require('./grid/bs-row');
 exports.BsRow = BsRow;
 var BsColumn = require('./grid/bs-column');
 exports.BsColumn = BsColumn;
+var BsContainer = require('./grid/bs-container');
+exports.BsContainer = BsContainer;
 var BsTab = require('./tab/bs-tab');
 exports.BsTab = BsTab;
 var BsTabItem = require('./tab/bs-tab-item');
@@ -64,7 +66,7 @@ exports.BsToolbar = BsToolbar;
 var BsWell = require('./well/bs-well');
 exports.BsWell = BsWell;
 function configure(config) {
-    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './grid/bs-column', './grid/bs-row', './input-controls/bs-textarea', './input-controls/bs-form-group', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
+    config.globalResources('./alert/bs-alert', './badge/bs-badge', './breadcrumb/bs-breadcrumb', './breadcrumb/bs-breadcrumb-item', './button/bs-button', './button/bs-button-group', './drop-down/bs-drop-down', './drop-down/bs-drop-down-item', './glyph/bs-glyph', './grid/bs-column', './grid/bs-row', './grid/bs-container', './input-controls/bs-textarea', './input-controls/bs-form-group', './input-group/bs-input-group', './jumbotron/bs-jumbotron', './label/bs-label', './list-group/bs-list-group', './list-group/bs-list-group-item', './media-object/bs-media-object', './nav-bar/bs-nav-bar', './page-header/bs-page-header', './pagination/bs-pagination', './panel/bs-panel', './pill/bs-pill', './pill/bs-pill-item', './progress-bar/bs-progress-bar', './responsive-embed/bs-responsive-embed', './tab/bs-tab', './tab/bs-tab-item', './thumbnail/bs-thumbnail', './toolbar/bs-toolbar', './well/bs-well');
 }
 exports.configure = configure;
 

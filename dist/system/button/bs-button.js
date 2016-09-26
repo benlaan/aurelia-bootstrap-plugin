@@ -25,8 +25,7 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
             })(ButtonSize || (ButtonSize = {}));
             exports_1("ButtonSize", ButtonSize);
             BsButton = (function () {
-                function BsButton(element) {
-                    this.element = element;
+                function BsButton() {
                     this.style = "default";
                 }
                 Object.defineProperty(BsButton.prototype, "sizeClass", {
@@ -46,7 +45,7 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                     configurable: true
                 });
                 BsButton.prototype.click = function () {
-                    this.element.dispatchEvent(new CustomEvent("click", { bubbles: true }));
+                    this.press(new CustomEvent("press"));
                 };
                 __decorate([
                     aurelia_framework_1.bindable, 
@@ -68,10 +67,14 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                     aurelia_framework_1.bindable, 
                     __metadata('design:type', String)
                 ], BsButton.prototype, "link", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', Function)
+                ], BsButton.prototype, "press", void 0);
                 BsButton = __decorate([
                     aurelia_framework_1.containerless,
                     aurelia_framework_1.autoinject, 
-                    __metadata('design:paramtypes', [Element])
+                    __metadata('design:paramtypes', [])
                 ], BsButton);
                 return BsButton;
             }());

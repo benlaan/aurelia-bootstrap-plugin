@@ -8,35 +8,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { bindable } from 'aurelia-framework';
-export class BsColumn {
-    get xsWidth() {
-        return this.xs || 12;
-    }
-    get smWidth() {
-        return this.sm || this.xsWidth;
-    }
-    get mdWidth() {
-        return this.md || this.smWidth;
-    }
-    get lgWidth() {
-        return this.lg || this.mdWidth;
-    }
+export class BsContainer {
 }
 __decorate([
     bindable, 
-    __metadata('design:type', Number)
-], BsColumn.prototype, "xs", void 0);
-__decorate([
-    bindable, 
-    __metadata('design:type', Number)
-], BsColumn.prototype, "sm", void 0);
-__decorate([
-    bindable, 
-    __metadata('design:type', Number)
-], BsColumn.prototype, "md", void 0);
-__decorate([
-    bindable, 
-    __metadata('design:type', Number)
-], BsColumn.prototype, "lg", void 0);
+    __metadata('design:type', Boolean)
+], BsContainer.prototype, "fluid", void 0);
 
-//# sourceMappingURL=bs-column.js.map
+//# sourceMappingURL=bs-container.js.map

@@ -11,10 +11,12 @@ export enum ButtonSize {
 @autoinject
 export class BsButton {
 
-    constructor(private element: Element) {
+    constructor() {
 
         this.style = "default";
     }
+
+    public element: HTMLElement;
 
     @bindable
     public size: string;
@@ -30,6 +32,8 @@ export class BsButton {
 
     @bindable
     public link: string;
+
+    @bindable press: (e: Event) => void;
 
     public get sizeClass(): string {
 
@@ -51,6 +55,6 @@ export class BsButton {
 
     public click(): void {
 
-        this.element.dispatchEvent(new CustomEvent("click", { bubbles: true }));
+        this.press(new CustomEvent("press"));
     }
 }

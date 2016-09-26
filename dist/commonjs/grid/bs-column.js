@@ -12,6 +12,34 @@ var aurelia_framework_1 = require('aurelia-framework');
 var BsColumn = (function () {
     function BsColumn() {
     }
+    Object.defineProperty(BsColumn.prototype, "xsWidth", {
+        get: function () {
+            return this.xs || 12;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(BsColumn.prototype, "smWidth", {
+        get: function () {
+            return this.sm || this.xsWidth;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(BsColumn.prototype, "mdWidth", {
+        get: function () {
+            return this.md || this.smWidth;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(BsColumn.prototype, "lgWidth", {
+        get: function () {
+            return this.lg || this.mdWidth;
+        },
+        enumerable: true,
+        configurable: true
+    });
     __decorate([
         aurelia_framework_1.bindable, 
         __metadata('design:type', Number)

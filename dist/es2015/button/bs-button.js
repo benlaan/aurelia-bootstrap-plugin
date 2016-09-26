@@ -15,8 +15,7 @@ export var ButtonSize;
     ButtonSize[ButtonSize["Large"] = 2] = "Large";
 })(ButtonSize || (ButtonSize = {}));
 export let BsButton = class BsButton {
-    constructor(element) {
-        this.element = element;
+    constructor() {
         this.style = "default";
     }
     get sizeClass() {
@@ -32,7 +31,7 @@ export let BsButton = class BsButton {
         }
     }
     click() {
-        this.element.dispatchEvent(new CustomEvent("click", { bubbles: true }));
+        this.press(new CustomEvent("press"));
     }
 };
 __decorate([
@@ -55,10 +54,14 @@ __decorate([
     bindable, 
     __metadata('design:type', String)
 ], BsButton.prototype, "link", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', Function)
+], BsButton.prototype, "press", void 0);
 BsButton = __decorate([
     containerless,
     autoinject, 
-    __metadata('design:paramtypes', [Element])
+    __metadata('design:paramtypes', [])
 ], BsButton);
 
 //# sourceMappingURL=bs-button.js.map

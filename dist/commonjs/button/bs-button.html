@@ -1,0 +1,10 @@
+<template>
+    <a if.bind="link" href.bind="link" class="btn btn-${style} ${sizeClass} ${class}" role="button">
+        <bs-glyph if.bind="glyph != ''" icon.bind="glyph"></bs-glyph>
+        <slot></slot>
+    </a>
+    <button if.bind="!link" type="button" class="btn btn-${style} ${sizeClass} ${class}" click.delegate="click()">
+        <bs-glyph if.bind="glyph != ''" icon.bind="glyph"></bs-glyph>
+        <slot></slot>
+    </button>
+</template>

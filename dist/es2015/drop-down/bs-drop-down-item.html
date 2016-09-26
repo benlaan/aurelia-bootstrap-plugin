@@ -1,0 +1,4 @@
+<template>
+    <li if.bind="!separator" class="${disabled ? 'disabled' : ''}"><a href.bind="link">${label}</a></li>
+    <li if.bind="separator" role="separator" class="divider"></li>
+</template>

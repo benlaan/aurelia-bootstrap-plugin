@@ -1,0 +1,13 @@
+<template>
+    <require from="./bs-breadcrumb-item"></require>
+
+    <ol class="breadcrumb">
+        <bs-breadcrumb-item repeat.for="item of items"
+            name.bind="item.name"
+            link.bind="item.link"
+            active.bind="$index == items.length - 1">
+        </bs-breadcrumb-item>
+
+        <slot></slot>
+    </ol>
+</template>

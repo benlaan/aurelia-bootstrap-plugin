@@ -1,0 +1,15 @@
+<template>
+    <div class="col-xs-${xsWidth || 6} col-sm-${smWidth || 4} col-md-${mdWidth || 3} col-lg-${lgWidth || 2}">
+        <div class="thumbnail" style.bind="style">
+            <a if.bind="link" href.bind="link" class="thumbnail" style="border: 0">
+                <img class="img-responsive" src.bind="imageSource" alt.bind="imageAltText"></img>
+            </a>
+
+            <img class="img-responsive" if.bind="!link" src.bind="imageSource" alt.bind="imageAltText" style="border: 0"/>
+
+            <div class="caption">
+                <slot></slot>
+            </div>
+        </div>
+    </div>
+</template>

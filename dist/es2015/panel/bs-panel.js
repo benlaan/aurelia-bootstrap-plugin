@@ -26,5 +26,21 @@ __decorate([
     bindable, 
     __metadata('design:type', String)
 ], BsPanel.prototype, "footerText", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsPanel.prototype, "class", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsPanel.prototype, "headerClass", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsPanel.prototype, "bodyClass", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsPanel.prototype, "footerClass", void 0);
 
 //# sourceMappingURL=bs-panel.js.map

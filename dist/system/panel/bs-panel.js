@@ -37,6 +37,22 @@ System.register(['aurelia-framework'], function(exports_1, context_1) {
                     aurelia_framework_1.bindable, 
                     __metadata('design:type', String)
                 ], BsPanel.prototype, "footerText", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
+                ], BsPanel.prototype, "class", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
+                ], BsPanel.prototype, "headerClass", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
+                ], BsPanel.prototype, "bodyClass", void 0);
+                __decorate([
+                    aurelia_framework_1.bindable, 
+                    __metadata('design:type', String)
+                ], BsPanel.prototype, "footerClass", void 0);
                 return BsPanel;
             }());
             exports_1("BsPanel", BsPanel);

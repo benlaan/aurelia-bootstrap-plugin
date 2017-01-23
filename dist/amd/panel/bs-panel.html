@@ -1,22 +1,22 @@
 <template>
-    <div class="panel panel-${style || 'default'}">
+    <div class="panel panel-${style || 'default'} ${class}">
 
-        <div if.bind="headerText" class="panel-heading">
+        <div if.bind="headerText" class="panel-heading ${headerClass}">
             <template if.bind="showTitle">
                  <h3 class="panel-title">${headerText}</h3>
             </template>
-            <template if.bind="showTitle">${headerText}</template>
+            <template if.bind="!showTitle">${headerText}</template>
         </div>
 
-        <div class="panel-body">
+        <div class="panel-body ${bodyClass}">
             <slot></slot>
         </div>
 
-        <div if.bind="footerText" class="panel-footer">
+        <div if.bind="footerText" class="panel-footer ${footerClass}">
             <template if.bind="showTitle">
                  <h3 class="panel-title">${footerText}</h3>
             </template>
-            <template if.bind="showTitle">${footerText}</template>
+            <template if.bind="!showTitle">${footerText}</template>
         </div>
 
     </div>

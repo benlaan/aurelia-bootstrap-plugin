@@ -16,6 +16,10 @@ define(["require", "exports", 'aurelia-framework'], function (require, exports, 
             aurelia_framework_1.bindable, 
             __metadata('design:type', Boolean)
         ], BsContainer.prototype, "fluid", void 0);
+        __decorate([
+            aurelia_framework_1.bindable, 
+            __metadata('design:type', String)
+        ], BsContainer.prototype, "class", void 0);
         return BsContainer;
     }());
     exports.BsContainer = BsContainer;

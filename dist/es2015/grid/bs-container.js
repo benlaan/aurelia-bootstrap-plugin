@@ -14,5 +14,9 @@ __decorate([
     bindable, 
     __metadata('design:type', Boolean)
 ], BsContainer.prototype, "fluid", void 0);
+__decorate([
+    bindable, 
+    __metadata('design:type', String)
+], BsContainer.prototype, "class", void 0);
 
 //# sourceMappingURL=bs-container.js.map
